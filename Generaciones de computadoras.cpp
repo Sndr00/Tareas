@@ -3,7 +3,7 @@
 
 int main (int argc,char **argv)
 {
-	system( "Title Generaciones de computadoras" );
+
 	printf("\n");
 	printf("\n");
 	printf("\n");
