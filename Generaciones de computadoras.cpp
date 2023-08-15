@@ -17,7 +17,7 @@ printf("\x1B[31mPrimera generación (1946-1955)\033[0m\t\t\n");
 printf("Se desarrollaron las primeras computadoras, estas se caracterizaban por lo siguiente:\n");
 printf("\n");
 printf("\033[3;47;35mValvulas de vacío:\033[0m");
-printf(" Se las usaban para realizar operaciones lÃ³gicas y de procesamiento de datos.\n");
+printf(" Se las usaban para realizar operaciones lógicas y de procesamiento de datos.\n");
 printf("\033[3;47;35mTamaño y consumo de energía:\033[0m");
 printf(" Ocupaban habitaciones enteras y requerían un enfriamiento eficiente.\n");
 printf("\033[3;47;35mProgramación manual:\033[0m");
