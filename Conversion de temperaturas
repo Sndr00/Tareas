@@ -1,0 +1,13 @@
+//Tarea 2 Conversion de temperaturas
+
+#include <stdio.h>
+#define Fahrenheit (9/5.0)*celsuis+32
+#define Celsuis (fahrenheit-32)*(5/9)
+
+int main(){
+
+int celsuis= 4
+printf ("Fahrenhiet = \n",celsuis);
+
+return 0:
+}	
