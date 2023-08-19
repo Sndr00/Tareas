@@ -16,6 +16,7 @@ printf("\n1. Convertir ºF a ºC");
 printf("\n2. Convertir ºC a ºF\n");
 printf("\nOpción = ");
 scanf("%d",&opc);
+
     
     switch(opc){
         
@@ -24,14 +25,14 @@ case 1:
     printf("\n   Ingrese los grados que quiere convertir : ");
     scanf("%d",&val1);
 if(val1>=34){
-    Celsuis = (val1-32)/1.8;
+    float Celsuis = (val1-32)/1.8;
     printf("   Celsuis:");
-    printf("\x1B[31m º%d\033[0m\n", Celsuis);
+    printf("\x1B[31m º%f\033[0m\n",Celsuis);
 }
 else{
-    Celsuis = (val1-32) /1.8;
+    float Celsuis = (val1-32)/1.8;
     printf("   Celsuis:");
-    printf("\x1B[34m º%d\033[0m\n", Celsuis);
+    printf("\x1B[34m º%f\033[0m\n", Celsuis);
 }
     printf("\n/*-----------------------------------------------*/\n");
     break;
@@ -39,20 +40,19 @@ else{
 case 2:
     printf("\n/*-----------------------------------------------*/");
     printf("\n   Ingrese los grados que quiere convertir: ");
-    scanf ("%d",&val1);
-if(val1>=-17.9){
-    Farenheit = (val1*9/5)+32;
+    scanf("%d",&val1);
+if(val1>=-17.8){
+    float Farenheit = (1.8*val1)+32;
     printf("   Farenheit:");
-    printf("\x1B[31m º%d\033[0m\n", Farenheit);
+    printf("\x1B[31m º%f\033[0m\n", Farenheit);
 }
 else{
-    Farenheit = (val1*9/5)+32;
+    float Farenheit = (1.8*val1)+32;
     printf("   Farenheit:");
-    printf("\x1B[34m º%d\033[0m\n", Farenheit);
+    printf("\x1B[34m º%f\033[0m\n", Farenheit);
 }
     printf("/*-----------------------------------------------*/");
     break;
 }
  return 0;
 }
-
