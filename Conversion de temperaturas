@@ -2,32 +2,39 @@
 
 #include <stdio.h>
 #include <iostream>
-#include<conio.h>
+#include <cstdlib>
 
 int main ()
 
 {
 setlocale(LC_ALL, "");
+system("color 70");
 
-int num1, num2,opc, val1, Farenheit, Celsuis;
+int opc, val1, Farenheit, Celsuis;
 printf("Elija la opción que desee\n");
-printf("\n1. Convertir de ºF a ºC");
-printf("\n2. Convertir de ºC a ºF\n");
+printf("\n1. Convertir ºF a ºC");
+printf("\n2. Convertir ºC a ºF\n");
 printf("\nOpción = ");
 scanf("%d",&opc);
     
     switch(opc){
         
 case 1:
-    printf("\nIngrese los grados que quiere convertir: ");
+    printf("\n/*-----------------------------------------------*/");
+    printf("\n   Ingrese los grados que quiere convertir : ");
     scanf ("%d",&val1);
-    Farenheit = (val1-32) /1.8;
-    printf ("Farenheit = %d\n", Farenheit);
+    Celsuis = (val1-32) /1.8;
+    printf ("   Celsuis : %d\n", Celsuis);
+    printf("/*-----------------------------------------------*/");
     break;
 case 2:
-    printf("\nIngrese los grados que quiere convertir: ");
+    printf("\n/*-----------------------------------------------*/");
+    printf("\n   Ingrese los grados que quiere convertir: ");
     scanf ("%d",&val1);
-    Celsuis = (val1*9/5)+32;
-    printf ("Celsuis = %d\n", Celsuis);
+    Farenheit = (val1*9/5)+32;
+    printf ("   Farenheit:  %d\n", Farenheit);
+    printf("/*-----------------------------------------------*/");
     break;
+}
+ return 0;
 }
