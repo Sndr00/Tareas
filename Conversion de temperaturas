@@ -1,13 +1,33 @@
 //Tarea 2 Conversion de temperaturas
 
 #include <stdio.h>
-#define Fahrenheit (9/5.0)*celsuis+32
-#define Celsuis (fahrenheit-32)*(5/9)
+#include <iostream>
+#include<conio.h>
 
-int main(){
+int main ()
 
-int celsuis= 4
-printf ("Fahrenhiet = \n",celsuis);
+{
+setlocale(LC_ALL, "");
 
-return 0:
-}	
+int num1, num2,opc, val1, Farenheit, Celsuis;
+printf("Elija la opción que desee\n");
+printf("\n1. Convertir de ºF a ºC");
+printf("\n2. Convertir de ºC a ºF\n");
+printf("\nOpción = ");
+scanf("%d",&opc);
+    
+    switch(opc){
+        
+case 1:
+    printf("\nIngrese los grados que quiere convertir: ");
+    scanf ("%d",&val1);
+    Farenheit = (val1-32) /1.8;
+    printf ("Farenheit = %d\n", Farenheit);
+    break;
+case 2:
+    printf("\nIngrese los grados que quiere convertir: ");
+    scanf ("%d",&val1);
+    Celsuis = (val1*9/5)+32;
+    printf ("Celsuis = %d\n", Celsuis);
+    break;
+}
