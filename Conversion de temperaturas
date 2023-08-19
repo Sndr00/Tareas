@@ -11,6 +11,8 @@ setlocale(LC_ALL, "");
 system("color 70");
 
 int opc, val1, Farenheit, Celsuis;
+
+printf("\033[3;47;35mConversion de temperaturas\033[0m\n");
 printf("Elija la opción que desee\n");
 printf("\n1. Convertir ºF a ºC");
 printf("\n2. Convertir ºC a ºF\n");
