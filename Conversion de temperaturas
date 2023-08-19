@@ -20,12 +20,20 @@ scanf("%d",&opc);
     switch(opc){
         
 case 1:
-    printf("\n/*-----------------------------------------------*/");
+    printf("\n/*-----------------------------------------------*/\n");
     printf("\n   Ingrese los grados que quiere convertir : ");
-    scanf ("%d",&val1);
+    scanf("%d",&val1);
+if(val1>=34){
+    Celsuis = (val1-32)/1.8;
+    printf("    Celsuis:");
+    printf("\x1B[31m %d\033[0m\n", Celsuis);
+}
+else{
     Celsuis = (val1-32) /1.8;
-    printf ("   Celsuis : %d\n", Celsuis);
-    printf("/*-----------------------------------------------*/");
+    printf("    Celsuis:");
+    printf("\x1B[34m %d\033[0m\n", Celsuis);
+}
+    printf("\n/*-----------------------------------------------*/\n");
     break;
 case 2:
     printf("\n/*-----------------------------------------------*/");
@@ -38,3 +46,4 @@ case 2:
 }
  return 0;
 }
+
