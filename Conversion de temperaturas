@@ -8,7 +8,6 @@ int main ()
 
 {
 setlocale(LC_ALL, "");
-system("color 0");
 
 int opc, val1, Farenheit, Celsuis;
 
