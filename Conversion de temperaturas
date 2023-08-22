@@ -25,14 +25,12 @@ case 1:
     printf("\n/*-----------------------------------------------*/\n");
     printf("\n   Ingrese los grados que quiere convertir : ");
     scanf("%d",&val1);
+     float Celsuis = (val1-32)/1.8;
+         printf("   Celsuis:");
 if(val1>=34){
-    float Celsuis = (val1-32)/1.8;
-    printf("   Celsuis:");
     printf("\x1B[31m º%f\033[0m\n",Celsuis);
 }
 else{
-    float Celsuis = (val1-32)/1.8;
-    printf("   Celsuis:");
     printf("\x1B[34m º%f\033[0m\n", Celsuis);
 }
     printf("\n/*-----------------------------------------------*/\n");
@@ -42,14 +40,12 @@ case 2:
     printf("\n/*-----------------------------------------------*/");
     printf("\n   Ingrese los grados que quiere convertir: ");
     scanf("%d",&val1);
-if(val1>=-17.8){
     float Farenheit = (1.8*val1)+32;
-    printf("   Farenheit:");
+      printf("   Farenheit:");
+if(val1>=-17.8){
     printf("\x1B[31m º%f\033[0m\n", Farenheit);
 }
 else{
-    float Farenheit = (1.8*val1)+32;
-    printf("   Farenheit:");
     printf("\x1B[34m º%f\033[0m\n", Farenheit);
 }
     printf("/*-----------------------------------------------*/");
