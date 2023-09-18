@@ -1,0 +1,14 @@
+// Suma del cuadrado de N numeros
+
+#include <stdio.h>
+
+int main (){
+int suma=0, i;    
+
+		for (i=1;i<=100;i++){
+			suma = suma+(i*i);}
+    
+    printf("Suma de los cuadrados de los primeros 100 numeros: %d", suma);
+            
+return 0;
+}
