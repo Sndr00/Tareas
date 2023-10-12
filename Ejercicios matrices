@@ -1,19 +1,23 @@
-//ejercicios matriz
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 int main() {
-int i,j, n, opc, superior=0;
-srand(time(NULL));    
 
-printf("Elija la opcion que desea\n\n");
+	int i,j,n,opc,superior=0;
+    srand(time(NULL));    
+ 
+
+printf("Elija la opcion que desea\n");
 printf("1. Suma\n2. Resta\n3. Multiplicacion\n4. Diagonal\n5. Suma triangular superior\n6. Terminar el programa\n");
 printf("Opcion: ");
 scanf("%d", &opc);
+
+
+while (opc<6){
+	
 printf("\nIngrese la longitud de la matriz: ");
 scanf("%d", &n);
 printf("\n");
-
 	int A[n][n];
 	int B[n][n];
 	int C[n][n];
@@ -81,15 +85,23 @@ printf("\n");
         case 5:
     for (i=0; i<n; i++) 
 	for (j=0; j<n; j++)
-	if(i<j){
-		
+	if (j<i)
+	C[i][j]=A[i][j]+B[i][j];
+	
+	{
+	
 	}
-	C[i][j]=A[i][j]+B[i][j];		
+	
    	printf("\nLa suma de la diagonal superior de las matrices son: \n");
 	for (i=0;i<n;i++)
 		for (j=0; j<n; j++)	
-		printf("%d ",C[i][j]);	
+		printf("%d ",C[i][j]);
        break;
+}
+printf("\n\nElija la opcion que desea\n");
+printf("1. Suma\n2. Resta\n3. Multiplicacion\n4. Diagonal\n5. Suma triangular superior\n6. Terminar el programa\n");
+printf("Opcion: ");
+scanf("%d", &opc);
 }
 
 return 0;
