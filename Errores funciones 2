@@ -1,20 +1,23 @@
 #include <stdio.h>
 
-void perimetroFigura (float numero){
-	float perimetro;
-	perimetro = 4 * numero;
+void perimetroFigura (int num, int *perimetro){
+	*perimetro = 4 * num;
 }
 
-void areaFigura (float numero){
-	float area;
-	area = numero * numero;
+void areaFigura (int num, int *area){
+	*area = num * num;
 }
 
 int main (){
-	int numero;
+	int num;
 	printf("Lado de un cuadrado: ");
-	scanf("%d", &numero);
-	printf("Perimetro: %f\n", perimetroFigura(numero));
-	printf("Area: %f\n", areaFigura(numero));
+	scanf("%d", &num);
+	
+	int perimetro, area;
+    perimetroFigura(num, &perimetro);
+    areaFigura(num, &area);
+	
+	printf("Perimetro: %d\n", perimetro);
+	printf("Area: %d\n", area);
 	return 0;
 }
