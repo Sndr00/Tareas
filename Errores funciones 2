@@ -14,8 +14,8 @@ int main (){
 	scanf("%d", &num);
 	
 	int perimetro, area;
-    perimetroFigura(num, &perimetro);
-    areaFigura(num, &area);
+	perimetroFigura(num, &perimetro);
+	areaFigura(num, &area);
 	
 	printf("Perimetro: %d\n", perimetro);
 	printf("Area: %d\n", area);
