@@ -1,10 +1,15 @@
 #include <stdio.h>
-
+void suma (int a, int b);
 int main (){
-	int num1, num2,sum;
-	printf("Introducir dos numeros a sumar\n");
-	scanf("%d %d",&num1, &num2);
-	sum = num1+num2;
-	printf("La suma es: %d",sum);
-	return 0;
+    int num1, num2, sum;
+    printf("introducir dos numeros a sumar \n");
+    scanf("%d %d", &num1, &num2);
+    sum = num1 + num2;
+    printf("La suma es: %d", sum);
+}
+
+void suma (int a, int b)
+{
+    int suma;
+    suma=a+b;
 }
