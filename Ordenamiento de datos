@@ -1,0 +1,73 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int find (int b[], int n){
+	int a, index;
+	
+	a=1000000;
+	index=-1;
+	
+	for (int i=0;i<n;i++)
+		if (b[i]<a)
+		{
+			a=b[i];
+			index=i;
+		}
+		return index;
+	}
+	
+int find2 (int b[], int n){	
+int a, index;
+	
+	index=1000000;	
+	a=-1;
+		
+	for (int i=0;i<n;i++)
+		if (b[i]>a)	
+		{	
+			a=b[i];
+			index=i;
+		}
+	return index;
+}
+
+
+int main (){
+int i,j,n,l,posAnterior=0,numeroActual=0;
+srand(time(NULL));
+
+printf("Numero de elementos a ordenar: ");
+scanf("%d", &n);
+int b [n];
+
+printf("Lista sin ordenar\n");
+for (i=0;i<n;i++){
+	b[i]=rand()%31;
+	printf(" %d ", b[i]);
+}
+printf("\n");
+
+for (i=0;i<n;i++){
+	numeroActual = b[i];
+	 posAnterior=i-1;
+	 while (posAnterior >= 0 && b[posAnterior]>numeroActual){
+	 	b[posAnterior+1]=b[posAnterior];
+	 	posAnterior--;
+	 }
+	 b[posAnterior+1]=numeroActual;
+}
+
+printf("Lista ordenada\n");
+for (i=0;i<n;i++)
+	printf(" %d ", b[i]);
+	
+	printf("\n \nElemento mas pequeño: \t%d ", b[find(b, n)]);
+	printf("\n \nElemento mas grande: \t%d ", b[find2(b, n)]);
+	
+	
+	printf("La media de es: %d", b[media(b, n)]);
+
+	
+return 0;
+}
