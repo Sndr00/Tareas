@@ -1,25 +1,25 @@
 #include <stdio.h>
 
 int serie();
-int a=0, b=1, f=0;
+int a=0, b=1, f=0, i=0;
 
 int serie(){
-	
+
 	a=b;
 	b=f;
 	f=a+b;
 	return f;
 }
-	
+
 int main(){
 	int valor;
 	printf("Numero de elementos de la serie fibonacci: ");
 	scanf("%d", &valor);
 	printf("Elementos de la serie:\n");
-	for (int i=0;i<valor;i++){
-		printf("%d ", serie());	
-	}
-	
+	do{
+	    i++;
+		printf("%d ", serie());	}
+    while (i<valor);
+
 	return 0;
 }
-
